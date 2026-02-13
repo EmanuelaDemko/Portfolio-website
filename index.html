@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emanuela | Portfolio</title>
+    <meta name="description" content="Student portfolio website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="backdrop-noise" aria-hidden="true"></div>
+    <div class="scroll-progress"><span id="scrollProgress"></span></div>
+
+    <main class="shell">
+      <section class="hero-card" id="intro">
+        <div class="hero-nav">
+          <a class="brand" href="#intro">Portfolio.</a>
+
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" id="siteNav">
+            <a href="#intro">Home</a>
+            <a href="#about">About</a>
+            <a href="#university">University</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <a href="#contact" class="nav-cta">Hire Me</a>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-copy">
+            <div class="social-links">
+              <a
+                href="https://github.com/EmanuelaDemko"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/emanuela-demko/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+
+            <h1>Hi I am Emanuela</h1>
+            <p>
+              I am a Computer Engineering student at Polytechnic University of
+              Tirana, very comfortable with frontend technologies and design
+              tools like Figma, HTML, CSS, and JavaScript. I also have solid
+              backend knowledge in Java and enjoy building reliable software
+              systems end to end.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#" class="btn btn-primary">
+                <i class="fa-solid fa-download"></i>
+                Download CV
+              </a>
+              <a href="#contact" class="btn btn-ghost">
+                <i class="fa-regular fa-envelope"></i>
+                Contact Me
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <span class="float-tag tag-hi">Hi</span>
+            <span class="float-tag tag-ai">AI</span>
+            <span class="float-tag tag-pr">Pr</span>
+            <span class="float-tag tag-dot"></span>
+            <div class="avatar-blob">
+              <img
+                class="avatar-image"
+                src="assets/avatar.png"
+                alt="Avatar portrait"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel about-panel reveal" id="about">
+        <h2>About Me</h2>
+        <div class="about-wrap">
+          <div class="about-content">
+            <p>
+              I am a Computer Engineering student who enjoys building systems
+              that are efficient, readable, and maintainable.
+            </p>
+            <p>
+              I am especially comfortable with frontend technologies and design
+              workflows, including Figma, HTML, CSS, and JavaScript. I also
+              have backend knowledge in Java and enjoy connecting modern
+              interfaces with practical application logic.
+            </p>
+            <ul class="about-points">
+              <li>Focused on algorithms and structured problem solving</li>
+              <li>Proficient in HTML, CSS, JavaScript, and PHP</li>
+              <li>Interested in internships and collaborative projects</li>
+            </ul>
+            <div class="mini-stats">
+              <article>
+                <h3>5+</h3>
+                <p>Projects</p>
+              </article>
+              <article>
+                <h3>10+</h3>
+                <p>Technologies</p>
+              </article>
+              <article>
+                <h3>100%</h3>
+                <p>Dedication</p>
+              </article>
+            </div>
+          </div>
+          <div class="about-visual" aria-hidden="true">
+            <span class="bubble-tag about-tag-1">Hi</span>
+            <span class="bubble-tag about-tag-2">AI</span>
+            <div class="about-avatar">
+              <img src="assets/aboutme.png" alt="About me avatar" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel university-panel reveal" id="university">
+        <h2>University</h2>
+        <div class="university-wrap">
+          <div class="university-logo-box">
+            <img
+              class="university-logo"
+              src="assets/upt-logo.svg"
+              alt="Polytechnic University of Tirana logo"
+            />
+          </div>
+          <div class="university-copy">
+            <h3>Polytechnic University of Tirana</h3>
+            <p>
+              I am currently studying Computer Engineering at Polytechnic
+              University of Tirana, focusing on strong fundamentals, frontend
+              engineering and UI design, plus backend development with Java.
+            </p>
+            <div class="university-tags">
+              <span>Advanced Algorithms</span>
+              <span>Data Structures</span>
+              <span>OOP</span>
+              <span>C Language</span>
+              <span>Software Engineering</span>
+              <span>Computer Architecture</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel skills-panel reveal" id="skills">
+        <h2>Tech Stack</h2>
+        <div class="tech-stack-grid">
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
+              alt="Apache logo"
+            />
+            <span>Apache</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+              alt="Bash logo"
+            />
+            <span>Bash</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+              alt="C logo"
+            />
+            <span>C</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap logo"
+            />
+            <span>Bootstrap</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS logo"
+            />
+            <span>CSS3</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              alt="Figma logo"
+            />
+            <span>Figma</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git logo"
+            />
+            <span>Git</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub logo"
+            />
+            <span>GitHub</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+              alt="GitLab logo"
+            />
+            <span>GitLab</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5 logo"
+            />
+            <span>HTML5</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"
+              alt="IntelliJ logo"
+            />
+            <span>IntelliJ</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              alt="Java logo"
+            />
+            <span>Java</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript logo"
+            />
+            <span>JavaScript</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+              alt="Linux logo"
+            />
+            <span>Linux</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="MySQL logo"
+            />
+            <span>MySQL</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+              alt="SQLite logo"
+            />
+            <span>SQLite</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original.svg"
+              alt="Tomcat logo"
+            />
+            <span>Tomcat</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg"
+              alt="Ubuntu logo"
+            />
+            <span>Ubuntu</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="VS Code logo"
+            />
+            <span>VS Code</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original.svg"
+              alt="SSH logo"
+            />
+            <span>SSH</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              alt="PHP logo"
+            />
+            <span>PHP</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://skillicons.dev/icons?i=hibernate"
+              alt="Hibernate logo"
+            />
+            <span>Hibernate</span>
+          </article>
+          <article class="tech-stack-item">
+            <img
+              src="https://skillicons.dev/icons?i=postman"
+              alt="Postman logo"
+            />
+            <span>Postman</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel projects-panel reveal" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-large-list">
+          <article class="project-large-card">
+            <div class="project-large-image">
+              <img src="assets/project1.jpeg" alt="Glowify project preview" />
+            </div>
+            <div class="project-large-body">
+              <h3>Glowify</h3>
+              <p>
+                A smart beauty clinic management system built with Spring Boot
+                that streamlines appointments, client records, and staff
+                coordination. It is designed to improve operational efficiency
+                while delivering a smooth and personalized client experience,
+                with reliable test coverage using Mockito.
+              </p>
+              <div class="project-tech-badges">
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                    alt="Java"
+                  />
+                  <em>Java</em>
+                </span>
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                    alt="Spring Boot"
+                  />
+                  <em>Spring Boot</em>
+                </span>
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                    alt="MySQL"
+                  />
+                  <em>MySQL</em>
+                </span>
+                <span class="project-tech-badge">
+                  <i class="fa-solid fa-vial"></i>
+                  <em>Mockito</em>
+                </span>
+              </div>
+              <div class="project-large-actions">
+                <a
+                  href="https://github.com/EmanuelaDemko/Glowify"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repo</a
+                >
+              </div>
+              <p class="project-meta-note">No live demo</p>
+            </div>
+          </article>
+
+          <article class="project-large-card">
+            <div class="project-large-image">
+              <img src="assets/game.jpeg" alt="Space Game project preview" />
+            </div>
+            <div class="project-large-body">
+              <h3>Space Game</h3>
+              <p>
+                A browser-based chase game built with HTML, CSS, and JavaScript.
+                The gameplay focuses on movement, reaction speed, and
+                score-based progression in a lightweight web experience.
+              </p>
+              <div class="project-tech-badges">
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML5"
+                  />
+                  <em>HTML5</em>
+                </span>
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS3"
+                  />
+                  <em>CSS3</em>
+                </span>
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"
+                  />
+                  <em>JavaScript</em>
+                </span>
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="GitHub Pages"
+                  />
+                  <em>GitHub Pages</em>
+                </span>
+              </div>
+              <div class="project-large-actions">
+                <a
+                  href="https://github.com/EmanuelaDemko/Space-Game"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repo</a
+                >
+                <a
+                  href="https://emanuelademko.github.io/Space-Game/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-large-card">
+            <div class="project-large-image">
+              <img src="assets/makina.jpeg" alt="TurboRental project preview" />
+            </div>
+            <div class="project-large-body">
+              <h3>TurboRental</h3>
+              <p>
+                A car and motorcycle rental system developed as a school group
+                project. Emanuela contributed to both frontend and backend work,
+                helping build user-facing flows and core rental management
+                logic.
+              </p>
+              <div class="project-tech-badges">
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                    alt="PHP"
+                  />
+                  <em>PHP</em>
+                </span>
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                    alt="MySQL"
+                  />
+                  <em>MySQL</em>
+                </span>
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML5"
+                  />
+                  <em>HTML5</em>
+                </span>
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS3"
+                  />
+                  <em>CSS3</em>
+                </span>
+                <span class="project-tech-badge">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"
+                  />
+                  <em>JavaScript</em>
+                </span>
+              </div>
+              <div class="project-large-actions">
+                <a
+                  href="https://github.com/Enzosakollari/TurboRental"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repo</a
+                >
+              </div>
+              <p class="project-meta-note">School group project</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel contact-panel reveal" id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-wrap">
+          <div class="contact-info">
+            <p class="contact-lead">You can reach me directly through:</p>
+            <a class="contact-link" href="mailto:emanueldemko0@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+              <span>emanueldemko0@gmail.com</span>
+            </a>
+            <a
+              class="contact-link"
+              href="https://www.linkedin.com/in/emanuela-demko/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>linkedin.com/in/emanuela-demko</span>
+            </a>
+            <a
+              class="contact-link"
+              href="https://github.com/EmanuelaDemko"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span>github.com/EmanuelaDemko</span>
+            </a>
+          </div>
+          <div class="contact-visual" aria-hidden="true">
+            <span class="bubble-tag contact-tag-1">@</span>
+            <span class="bubble-tag contact-tag-2">Pr</span>
+            <div class="contact-avatar">
+              <img src="assets/contact.png" alt="Contact avatar" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Portfolio.</p>
+        <p>(c) <span id="year"></span> All rights reserved.</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
